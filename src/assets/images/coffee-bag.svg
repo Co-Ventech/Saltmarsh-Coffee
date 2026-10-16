@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cfe0d2"/><stop offset="1" stop-color="#8fb09a"/></linearGradient>
+<filter id="s" x="-20%" y="-10%" width="140%" height="130%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#1c2b22" flood-opacity="0.35"/></filter></defs>
+<rect width="1000" height="1000" fill="url(#g)"/><circle cx="830" cy="170" r="230" fill="#ffffff" opacity="0.18"/>
+<g filter="url(#s)"><path d="M280 190 H720 L760 250 L790 860 Q790 890 760 890 H240 Q210 890 210 860 L240 250 Z" fill="#c89a62"/>
+<path d="M280 190 H720 L735 230 H265 Z" fill="#b48650"/><rect x="258" y="250" width="484" height="14" fill="#a97a45" opacity="0.5"/>
+<rect x="290" y="330" width="420" height="430" rx="18" fill="#f7efe4"/>
+<rect x="290" y="330" width="420" height="92" rx="18" fill="#2b1b12"/><rect x="290" y="390" width="420" height="32" fill="#2b1b12"/>
+<text x="500" y="392" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#f7efe4" text-anchor="middle" letter-spacing="5">SALTMARSH</text>
+<path d="M330 475 q20 -30 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" stroke="#c8742c" stroke-width="5" fill="none" stroke-linecap="round"/>
+<text x="500" y="560" font-family="Georgia, serif" font-size="58" fill="#2b1b12" text-anchor="middle" font-weight="700">Ethiopia Guji</text>
+<text x="500" y="610" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#6b4a33" text-anchor="middle" letter-spacing="3">WASHED · LIGHT ROAST</text>
+<text x="500" y="672" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#2b1b12" text-anchor="middle">Blueberry · Jasmine · Honey</text>
+<text x="500" y="730" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#6b4a33" text-anchor="middle">250 g · Roasted Tuesday</text></g>
+</svg>

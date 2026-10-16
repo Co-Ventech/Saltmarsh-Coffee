@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary-50: #fbf5ee;
+  --color-primary-100: #f4e6d3;
+  --color-primary-200: #e8cba6;
+  --color-primary-300: #d9a974;
+  --color-primary-400: #cc8a4c;
+  --color-primary-500: #b8712f;
+  --color-primary-600: #9a5a22;
+  --color-primary-700: #7a441c;
+  --color-primary-800: #5c331a;
+  --color-primary-900: #3f2314;
+  --color-primary-950: #24130b;
+
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
+
+  --font-sans:
+    var(--font-custom), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 text-center text-base leading-snug font-medium text-gray-700 shadow-md transition duration-200 ease-in hover:border-gray-600 hover:bg-gray-100 hover:shadow-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 md:px-8 dark:border-slate-500 dark:bg-transparent dark:text-slate-300 dark:hover:border-slate-700 dark:hover:bg-slate-700 dark:hover:text-white;
+}
+
+@utility btn-primary {
+  @apply border-primary-600 bg-primary-600 font-semibold text-white hover:border-primary-800 hover:bg-primary-800 hover:text-white dark:border-primary-700 dark:bg-primary-700 dark:text-white dark:hover:border-primary-900 dark:hover:bg-primary-900;
+}
+
+@utility card {
+  @apply w-full rounded-2xl border border-primary-100 bg-white px-6 py-8 shadow-sm backdrop-blur-sm dark:border-gray-700 dark:bg-slate-900;
+}
+
+/*
+  rehype-pretty-code compila cada bloque con los dos temas de Shiki a la vez y deja
+  ambos como variables CSS en cada span. Hay que aplicar explícitamente la que toca:
+  sin estas reglas el código hereda el color de `prose` y sale sin resaltar.
+  Marca los bloques con data-theme, no con una clase .shiki.
+*/
+[data-theme],
+[data-theme] span {
+  color: var(--shiki-light);
+  font-style: var(--shiki-light-font-style);
+  font-weight: var(--shiki-light-font-weight);
+  text-decoration: var(--shiki-light-text-decoration);
+}
+
+.dark [data-theme],
+.dark [data-theme] span {
+  color: var(--shiki-dark);
+  font-style: var(--shiki-dark-font-style);
+  font-weight: var(--shiki-dark-font-weight);
+  text-decoration: var(--shiki-dark-text-decoration);
+}
+
+
+@layer base {
+  h1,
+  h2 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+}

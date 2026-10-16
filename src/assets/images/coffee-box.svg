@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d9b7"/><stop offset="1" stop-color="#d68e54"/></linearGradient>
+<filter id="s" x="-20%" y="-10%" width="140%" height="140%"><feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#2b160c" flood-opacity="0.35"/></filter></defs>
+<rect width="1000" height="1000" fill="url(#g)"/>
+<g filter="url(#s)"><path d="M180 420 L500 300 L820 420 L820 760 L500 880 L180 760 Z" fill="#b88555"/>
+<path d="M180 420 L500 540 L820 420 L500 300 Z" fill="#cf9d68"/><path d="M500 540 V880 L180 760 V420 Z" fill="#a8763f"/><path d="M500 540 V880 L820 760 V420 Z" fill="#b88555"/>
+<path d="M395 340 L715 460 L715 520 L395 400 Z" fill="#e8d3b3" opacity="0.9"/>
+<g transform="translate(655 700) skewY(-20)"><rect x="-95" y="-52" width="190" height="104" rx="8" fill="#f7efe4"/>
+<text y="-2" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#2b1b12" text-anchor="middle" letter-spacing="2">SALTMARSH</text>
+<text y="30" font-family="Helvetica, Arial" font-size="15" fill="#6b4a33" text-anchor="middle" letter-spacing="2">FRESH ROASTED</text></g></g>
+<g transform="translate(720 190) rotate(14)"><circle r="85" fill="#2b1b12"/><text y="-6" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#f7efe4">Roasted</text><text y="30" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#e8b27a">Tuesday</text></g>
+</svg>
