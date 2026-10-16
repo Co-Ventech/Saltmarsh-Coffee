@@ -52,7 +52,3 @@ Any Next.js host works, for example Vercel: import the repository, keep the defa
 - Saltmarsh Coffee Roasters, its address, phone numbers, emails, prices and reviews are made up for demonstration. The reviews are labelled as samples.
 - The contact and subscribe forms are visual only and do not send anything.
 - All illustrations are original SVGs, so no stock photography or third-party image licences are involved.
-
-## Credits and licence
-
-Built on the [TailNext](https://github.com/arthelokyo/tailnext) template by Arthelokyo, released under the MIT licence. The licence text is kept in `LICENSE.md`.
